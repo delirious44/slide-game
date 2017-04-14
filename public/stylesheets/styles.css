@@ -1,0 +1,112 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: rubik, sans-serif;
+	box-sizing: border-box;
+}
+
+.header{
+	height: 50px;
+	/*border: 1px solid black;*/
+	width: 100%;
+	text-align: center;
+	line-height: 50px;
+	background-color: rgba(0, 0, 0, 200);
+	color: white;
+}
+
+.play-area{
+	width: calc(70%);
+	float: left;
+	position: absolute;
+	top: calc(50px);
+	bottom: 0px;
+}
+
+.game{
+	width: 400px;
+	height: 400px;
+	border: 5px solid rgba(187, 173, 160, 255);
+	background-color: rgba(204, 192, 179, 1);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 2px;
+	box-sizing: content-box;
+}
+
+.tile{
+	width: 100px;
+	height: 100px;
+	border: 2px solid rgba(187, 173, 160, 255);
+	float: left;
+	background-color: white;
+	text-align: center;
+	line-height: 100px;
+	color:rgba(119, 110, 101, 255);
+	font-weight: bold;
+	font-weight: 2em;
+	position: absolute;
+	transition: .1s all;
+}
+
+.empty{
+	width: 100px;
+	height: 100px;  
+	border: 2px solid rgba(187, 173, 160, 255);
+	background-color: transparent;
+	float: left;
+}
+
+.play-board{
+	width: calc(30%);
+	float: left;
+	position: absolute;
+	top:50px;
+	bottom: 0px;
+	left: 70%;
+}
+
+.play-board .timer-area, .play-board .settings-area{
+	height: 50%;
+	border-left: 1px solid black;
+	width: 100%;
+	position: relative;
+}
+
+.timer-area{
+	border-bottom: 1px solid black;
+}
+
+.time{
+	font-size: 2em;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+}
+
+#size{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: none;
+	padding: 10px;
+	border: 1px solid black;
+	text-align: center;
+}
+
+#start{
+	padding: 10px 20px;
+	position: absolute;
+	top:70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: none;
+	background-color: rgba(0, 0, 0, 200);
+	color: white;
+	cursor: pointer;
+}

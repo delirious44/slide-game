@@ -26,6 +26,8 @@
 	var startButton = document.querySelector("#start");
 	startButton.addEventListener("click", function(){
 		var gameSize = (document.querySelector("#size")).value;
+		gameSize = +gameSize;
+		gameSize = gameSize > 6 ? 6 : gameSize;
 		controller.createGame(+gameSize);
 	});
 

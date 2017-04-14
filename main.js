@@ -1,6 +1,8 @@
 var express = require("express");
 var path = require("path");
 
+var port = process.env.PORT || 3000;
+
 var slideModel = require("./myModules/slide-model");
 
 var app = express();
@@ -16,6 +18,6 @@ app.get("/gameModel", function(req, res){
 	res.json(slideModel);
 });
 
-app.listen(3000, function(){
+app.listen(port, function(){
 	console.log("Application listening at port 3000");
 });
